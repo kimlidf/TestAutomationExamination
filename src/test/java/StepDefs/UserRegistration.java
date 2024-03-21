@@ -1,10 +1,12 @@
 package StepDefs;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -23,12 +25,9 @@ public class UserRegistration {
     @After
     public void tearDown(){
         if(this.driver != null){
-            this.driver.close();
             this.driver.quit();
         }
     }
-
-    @Test
 
     @Given("I am on the {string} User Registration Page")
     public void iAmOnTheUserRegistrationPage(String browser) {
