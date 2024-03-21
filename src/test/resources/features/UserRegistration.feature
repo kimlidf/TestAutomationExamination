@@ -15,7 +15,7 @@ Feature: User Registration
 
     Examples:
       | Browser | DateOfBirth | FirstName | LastName  | EmailAddress    | ConfirmedEmail  | Password  | ConfirmedPassword | TermsConditionStatus  | Outcome                               |
-      | Chrome  | 27/10/1990  | Astrid    | Kling     | test35@mail.com | test35@mail.com | Password  | Password          | accepted              |  successfully created                 |
+      | Chrome  | 27/10/1990  | Astrid    | Kling     | test36@mail.com | test36@mail.com | Password  | Password          | accepted              |  successfully created                 |
       | Edge    | 02/01/1959  | Bodil     |           | bodil@mail.com  | bodil@mail.com  | Password  | Password          | accepted              |  missing last name input              |
       | Chrome  | 07/07/1988  | Clara     | Kim       | stina@mail.com  | stina@mail.com  | Password  | Password1         | rejected              |  lacking correct password confirmation|
       | Firefox | 20/04/1933  | Ester     | Klang     | ester@mail.com  | ester@mail.com  | Password  | Password          | rejected              |  lacking accepted terms and conditions|
